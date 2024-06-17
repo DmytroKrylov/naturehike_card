@@ -1,1 +1,0 @@
-{"mappings":"ACAA","sources":["index.ca98d101.css","src/styles/style.css"],"sourcesContent":["h1, h2, h3, h4, h5, h6, p {\n  margin: 0;\n  padding: 0;\n}\n\n/*# sourceMappingURL=index.ca98d101.css.map */\n","h1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n  margin: 0;\n  padding: 0;\n}\n"],"names":[],"version":3,"file":"index.ca98d101.css.map"}
