@@ -29,8 +29,14 @@ body {
   font-family: 'Segoe UI Regular', sans-serif;
 }
 
-.container {
+.mainContainer {
   padding-inline: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .mainContainer {
+    padding-inline: 70px;
+  }
 }
 
 .card {
@@ -43,6 +49,22 @@ body {
   line-height: 26.6px;
   color: #161c2d;
   text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__title {
+    font-size: 37px;
+    line-height: 49.21px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card__topFlex {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 .card__gallery {
@@ -59,6 +81,12 @@ body {
 
 .card__last {
   width: 142.5px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__last {
+    width: 412px;
+  }
 }
 
 .gallery-item {
@@ -80,6 +108,14 @@ body {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 1440px) {
+  .card__price {
+    font-size: 31px;
+    line-height: 41.23px;
+    margin-bottom: 20px;
+  }
+}
+
 .card__articul {
   font-size: 12px;
   line-height: 15.96px;
@@ -88,11 +124,25 @@ body {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 1440px) {
+  .card__articul {
+    font-size: 17px;
+    line-height: 22.61px;
+    margin-bottom: 20px;
+  }
+}
+
 .card__flex {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__flex {
+    margin-bottom: 20px;
+  }
 }
 
 .card__itemFlex {
@@ -164,6 +214,13 @@ body {
   color: #161c2d;
 }
 
+@media screen and (min-width: 1440px) {
+  .card__paragraph {
+    font-size: 17px;
+    line-height: 22.61px;
+  }
+}
+
 .card__svgFlex {
   display: flex;
   justify-content: space-between;
@@ -182,6 +239,12 @@ body {
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__color {
+    margin-bottom: 30px;
+  }
 }
 
 .card__colorItem {
@@ -259,4 +322,86 @@ body {
   font-size: 16px;
   line-height: 21.28px;
   color: white;
+}
+
+.card__cash {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__cash {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+.accordion__margin {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1440px) {
+  .accordion__margin {
+    margin-bottom: 30px;
+  }
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 15.96px;
+  color: #161c2d !important;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1440px) {
+  .card-link {
+    font-size: 17px;
+    line-height: 22.61px;
+  }
+}
+
+.card-link::after {
+  content: '';
+  background-image: url(/src/images/buttonPlus.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 30px;
+  height: 15px;
+}
+
+@media screen and (min-width: 1440px) {
+  .card-link::after {
+    width: 40px;
+    height: 20px;
+  }
+}
+
+.card__question {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 15.96px;
+  color: #161c2d;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1440px) {
+  .card__question {
+    font-size: 17px;
+    line-height: 22.61px;
+  }
+}
+
+.card__question::before {
+  content: '';
+  background-image: url(/src/images/question.svg);
+  display: block;
+  width: 20px;
+  height: 20px;
 }
